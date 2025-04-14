@@ -19,17 +19,17 @@ const server = http_1.default.createServer((req, res) => {
                 </div>
             </html>
         `;
-        res.writeHead(200, { 'Content-Type': 'text/html' });
+        res.writeHead(200, { "Content-Type": "text/html" });
         res.end(html);
     }
     else if (req.url === "/public/css/styles.css") {
         fs_1.default.readFile("./public/css/styles.css", (err, data) => {
             if (err) {
-                res.writeHead(404, { 'Content-Type': 'text/css' });
+                res.writeHead(404, { "Content-Type": "text/css" });
                 res.end("File not found");
             }
             else {
-                res.writeHead(200, { 'Content-Type': 'text/css' });
+                res.writeHead(200, { "Content-Type": "text/css" });
                 res.end(data);
             }
         });

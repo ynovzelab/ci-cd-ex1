@@ -10,13 +10,13 @@ let user = {
         {
             id: 1,
             name: "Product 1",
-            price: 20
+            price: 20,
         },
         {
             id: 1,
             name: "Product 1",
-        }
-    ]
+        },
+    ],
 };
 const fullName = (user) => {
     return `${user.firstName} ${user.lastName}`;
