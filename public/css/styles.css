@@ -1,5 +1,10 @@
 :root {
   --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+}
+
+body {
+  background: var(--secondary-color);
 }
 
 .app__message h1 {

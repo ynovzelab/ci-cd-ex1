@@ -6,6 +6,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // npm i http
 const http_1 = __importDefault(require("http"));
 const fs_1 = __importDefault(require("fs"));
+const index_1 = require("./lib/index");
+const user = {
+    firstName: "John",
+    lastName: "Doe",
+};
 const server = http_1.default.createServer((req, res) => {
     if (req.url === "/") {
         const html = `
@@ -15,7 +20,7 @@ const server = http_1.default.createServer((req, res) => {
                     <link rel="stylesheet" href="/public/css/styles.css"/>
                 </head>
                 <div class="app__message">
-                    <h1>Hello World</h1>
+                    <h1>Hello ${(0, index_1.displayUserName)(user)}</h1>
                 </div>
             </html>
         `;
