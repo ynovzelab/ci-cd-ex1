@@ -1,0 +1,21 @@
+{
+  "name": "ci-ex1",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./dist/app.js",
+    "ts:watch": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "http": "^0.0.1-security"
+  }
+}
