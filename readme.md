@@ -22,3 +22,16 @@ https://github.com/ynovzelab/ci-cd-ex1
 // Mise en ligne sur render 
 // Déclencher une mise en ligne à l'aide d'un pull request de dev => main
 
+  "scripts": {
+    "dev": "nodemon ./dist/app.js",
+    "sass:watch": "sass --watch ./src/styles:./public/css",
+    "sass:build": "sass ./src/styles:./public/css",
+    "start": "node ./dist/app.js",
+    "tsc:build": "tsc",
+    "ts:watch": "tsc --watch",
+    "prettier:fix": "prettier --write ./src/**/*.ts",
+    "prettier:check": "prettier --check ./src/**/*.ts",
+    "lint": "eslint src --ext .ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run tsc:build && npm run sass:build && npm run prettier:check && npm run lint"
+  },
