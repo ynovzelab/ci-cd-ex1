@@ -40,6 +40,6 @@ const server = http_1.default.createServer((req, res) => {
         });
     }
 });
-server.listen(process.env.PORT, () => {
+server.listen(3000, () => {
     console.log("Server is running on port 3000");
 });
