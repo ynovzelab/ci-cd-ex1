@@ -3,7 +3,7 @@ import { User } from "../interfaces/";
 
 describe("displayUserName", () => {
   it("should return the full name of the user", () => {
-    const user: User = { firstName: "John" };
+    const user: User = { firstName: "John", lastName: "Doe" };
     const result = displayUserName(user);
     expect(result).toBe("John Doe");
   });
