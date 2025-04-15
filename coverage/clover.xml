@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1744705799498" clover="3.2.0">
-  <project timestamp="1744705799498" name="All files">
-    <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3" elements="18" coveredelements="18" complexity="0" loc="11" ncloc="11" packages="2" files="2" classes="2"/>
+<coverage generated="1744706289780" clover="3.2.0">
+  <project timestamp="1744706289780" name="All files">
+    <metrics statements="18" coveredstatements="18" conditionals="7" coveredconditionals="7" methods="5" coveredmethods="5" elements="30" coveredelements="30" complexity="0" loc="18" ncloc="18" packages="3" files="3" classes="3"/>
+    <package name="dist.lib">
+      <metrics statements="7" coveredstatements="7" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
+      <file name="index.js" path="/Users/vincent/nodejs/ynov_2024_2025/devops/ci-ex1/dist/lib/index.js">
+        <metrics statements="7" coveredstatements="7" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+      </file>
+    </package>
     <package name="dist.src.lib">
       <metrics statements="7" coveredstatements="7" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
       <file name="index.js" path="/Users/vincent/nodejs/ynov_2024_2025/devops/ci-ex1/dist/src/lib/index.js">
