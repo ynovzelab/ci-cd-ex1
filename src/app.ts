@@ -1,5 +1,5 @@
 // npm i http
-import http from "http";
+import http from 'http';
 import fs from "fs";
 import { displayUserName } from "./lib/index";
 import { User } from "./interfaces/index";
@@ -7,6 +7,7 @@ import { User } from "./interfaces/index";
 const user:User = {
     firstName: "John",
     lastName: "Doe",
+    
 }
 
 const server = http.createServer((req, res) => {

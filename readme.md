@@ -24,3 +24,10 @@ https://github.com/ynovzelab/ci-cd-ex1
 
 // mpm i jest
 // npx jest --init
+
+// Créer une pipeline deploy.yml
+// Elle s'applique seulement sur la branche main 
+// Seulement en pull request
+// Sur Render : désactiver le auto deploy 
+// déclencher le hook de déploiement
+// ce hook soit inséré dans les secret de githb actions
