@@ -1,0 +1,16 @@
+TN:
+SF:src/lib/index.ts
+FN:2,displayUserName
+FNF:1
+FNH:1
+FNDA:4,displayUserName
+DA:1,1
+DA:2,1
+DA:3,4
+DA:4,4
+LF:4
+LH:4
+BRDA:2,0,0,4
+BRF:1
+BRH:1
+end_of_record
