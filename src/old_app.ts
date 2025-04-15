@@ -16,7 +16,7 @@ interface User {
   products: Product[];
 }
 
-let user: User = {
+const user: User = {
   firstName: "John",
   lastName: "Doe",
   age: 30,
@@ -36,18 +36,24 @@ let user: User = {
   ],
 };
 
+console.log(user);
+
 const fullName = (user: User): string => {
   return `${user.firstName} ${user.lastName}`;
 };
+
+fullName(user);
 
 const fullNameBis = (fistName: string, lastName: string): void => {
   console.log(`${fistName} ${lastName}`);
 };
 
-interface IProps {
-  lastName: string;
-  firstName: string;
-}
+fullNameBis("John", "Doe");
+
+// interface IProps {
+//   lastName: string;
+//   firstName: string;
+// }
 
 // const Index = ({lastName, firstName}:IProps) => {
 //     return (

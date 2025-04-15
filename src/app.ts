@@ -1,6 +1,14 @@
 // npm i http
 import http from "http";
 import fs from "fs";
+import { displayUserName } from "./lib/index";
+import { User } from "./interfaces/index";
+
+const user:User = {
+    firstName: "John",
+    lastName: "Doe",
+}
+
 const server = http.createServer((req, res) => {
   if (req.url === "/") {
     const html = `
@@ -10,7 +18,7 @@ const server = http.createServer((req, res) => {
                     <link rel="stylesheet" href="/public/css/styles.css"/>
                 </head>
                 <div class="app__message">
-                    <h1>Hello World</h1>
+                    <h1>Hello ${displayUserName(user)}</h1>
                 </div>
             </html>
         `;

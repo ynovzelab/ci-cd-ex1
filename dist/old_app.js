@@ -1,5 +1,5 @@
 "use strict";
-let user = {
+const user = {
     firstName: "John",
     lastName: "Doe",
     age: 30,
@@ -18,12 +18,19 @@ let user = {
         },
     ],
 };
+console.log(user);
 const fullName = (user) => {
     return `${user.firstName} ${user.lastName}`;
 };
+fullName(user);
 const fullNameBis = (fistName, lastName) => {
     console.log(`${fistName} ${lastName}`);
 };
+fullNameBis("John", "Doe");
+// interface IProps {
+//   lastName: string;
+//   firstName: string;
+// }
 // const Index = ({lastName, firstName}:IProps) => {
 //     return (
 //         <div>
