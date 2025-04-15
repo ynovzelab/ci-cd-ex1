@@ -39,3 +39,16 @@ jobs:
 
       - name: Run tests
         run: npm run test
+    
+  deploy: 
+    name: Deploy to Render
+    needs: check
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps: 
+      - name: Checkout code 
+        uses: actions/checkout@v4
+      
+      - name: Call hook
+        run: curl ${{ secrets.RENDER_DEPLOY_HOOK }}
