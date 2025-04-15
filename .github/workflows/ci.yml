@@ -53,6 +53,4 @@ jobs:
         uses: actions/checkout@v4
       
       - name: Call hook
-        env:
-          RENDER_DEPLOY_HOOK: ${{ secrets.RENDER_DEPLOY_HOOK }}
-        run: curl "$RENDER_DEPLOY_HOOK"
+      run: curl ${{ secrets.RENDER_DEPLOY_HOOK }}
