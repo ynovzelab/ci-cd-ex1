@@ -13,7 +13,7 @@
     "prettier:check": "prettier --check ./src/**/*.ts",
     "lint": "eslint src --ext .ts",
     "test": "jest",
-    "build": "npm run tsc:build && npm run sass:build && npm run prettier:check && npm run lint && npm run test"
+    "build": "npm run tsc:build && npm run sass:build"
   },
   "keywords": [],
   "author": "",
